@@ -1,16 +1,3 @@
-let amazonita = 350
-let amatista = 450
-let aventurina = 300
-let citrino = 350
-let cuarzoRosa = 400
-let fluoritaVerde = 350
-let sahumerioPS = 450
-let kitHierbas = 1350
-let mysteryBox = 2000
-let calendula = 80
-let menta = 50
-let sahumerioR = 450
-
 /*let si = "si"
 
 
@@ -89,70 +76,63 @@ envios.append(li)
 }
 
 
+let carrito = [];
 
+let amatista = document.getElementById("producto1");
+amatista.addEventListener("click", () => {
+    carrito.push(450);
+});
+let amazonita = document.getElementById("producto2");
+amazonita.addEventListener("click", () => {
+    carrito.push(350);
+});
+let aventurina = document.getElementById("producto3");
+aventurina.addEventListener("click", () => {
+    carrito.push(300);
+});
+let citrino = document.getElementById("producto4");
+citrino.addEventListener("click", () => {
+    carrito.push(350);
+});
+let cuarzoRosa = document.getElementById("producto5");
+cuarzoRosa.addEventListener("click", () => {
+    carrito.push(400);
+});
+let fluoritaVerde = document.getElementById("producto6");
+fluoritaVerde.addEventListener("click", () => {
+    carrito.push(350);
+});
+let sahumerioPS = document.getElementById("producto7");
+sahumerioPS.addEventListener("click", () => {
+    carrito.push(450);
+});
+let kitHierbas = document.getElementById("producto8");
+kitHierbas.addEventListener("click", () => {
+    carrito.push(1350);
+});
+let mysteryBox = document.getElementById("producto9");
+mysteryBox.addEventListener("click", () => {
+    carrito.push(2000);
+});
+let menta = document.getElementById("producto10");
+menta.addEventListener("click", () => {
+    carrito.push(50);
+});
+let sahumerioR = document.getElementById("producto11");
+sahumerioR.addEventListener("click", () => {
+    carrito.push(450);
+});
+let calendula = document.getElementById("producto12");
+calendula.addEventListener("click", () => {
+    carrito.push(80);
+});
 
-let carrito = []
-
-console.log (document.getElementById("producto1").addEventListener("click", prod1))
-document.getElementById("producto2").addEventListener("click", prod2)
-document.getElementById("producto3").addEventListener("click", prod3)
-document.getElementById("producto4").addEventListener("click", prod4)
-document.getElementById("producto5").addEventListener("click", prod5)
-document.getElementById("producto6").addEventListener("click", prod6)
-document.getElementById("producto7").addEventListener("click", prod7)
-document.getElementById("producto8").addEventListener("click", prod8)
-document.getElementById("producto9").addEventListener("click", prod9)
-document.getElementById("producto10").addEventListener("click", prod10)
-document.getElementById("producto11").addEventListener("click", prod11)
-document.getElementById("producto12").addEventListener("click", prod12)
-
-
-function prod1(){
-    console.log(carrito.push(450))
-}
-function prod2(){
-    carrito.push(350)
-}
-function prod3(){
-    carrito.push(300)
-}
-function prod4(){
-    carrito.push(350)
-}
-function prod5(){
-    carrito.push(400)
-}
-function prod6(){
-    carrito.push(350)
-}
-function prod7(){
-    carrito.push(450)
-}
-function prod8(){
-    carrito.push(1350)
-}
-function prod9(){
-    carrito.push(2000)
-}
-function prod10(){
-    carrito.push(50)
-}
-function prod11(){
-    carrito.push(450)
-}
-function prod12(){
-    carrito.push(80)
-}
-
-let sumaTotal = 0;
-
-for ( i = 0 ; i < carrito.leght ; i++){
-sumaTotal + carrito[i];
-}
-
-let mosCar=document.getElementById("mostrar")
-
-mosCar.addEventListener("click",()=>{
-    (alert(sumaTotal))
-}
-)
+let total = document.getElementById("total");
+total.addEventListener("click", () => {
+    let sumaTotal = 0;
+    for (i = 0; i < carrito.length; i++) {
+        sumaTotal += carrito[i];
+        console.log(i);
+    }
+    alert(sumaTotal);
+});
