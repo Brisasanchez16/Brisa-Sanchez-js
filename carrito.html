@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
-    <script src="./js/carrito.js"></script>
-    <link rel="stylesheet" href="./css/estilos.css">
-</head>
-<body class="bodyCarrito">
-    <header>
-        <nav>
-            <div class="container">
-                <div class="navbar">
-                    <img class="logo" src="./assets/img/logo.png" alt="logo">
-                    <ul>
-                        <li><a href="./index.html">VOLVER AL INICIO</a></li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carrito</title>
+        <link rel="stylesheet" href="css/estilos.css" />
+    </head>
+    <body class="bodyCarrito">
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="navbar">
+                        <img
+                            class="logo"
+                            src="assets/img/logo.png"
+                            alt="logo"
+                        />
+                        <ul>
+                            <li><a href="index.html">VOLVER AL INICIO</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
+        <label for="name">Nombre Completo</label>
+        <input type="text" id="inputNombre" />
+        <br />
+        <label for="addres">Dirección</label>
+        <input type="text" id="inputDireccion" />
+        <br />
+        <label for="age">Edad</label>
+        <input type="number" id="inputEdad" />
+        <button onclick="input()" class="boton" id="boton">Pedir</button>
 
-
-    <label for="name">Nombre</label>
-    <input type="text" id="inputNombre">
-    <label for="lastname">Apellido</label>
-    <input type="text" id="inputApellido">
-    <br/>
-    <label for="addres">Dirección</label>
-    <input type="text" id="inputDireccion">
-    <br/>
-    <label for="age">Edad</label>
-    <input type="number" id="inputEdad">
-
-    <button onclick="addInfo()" class="boton">Pedir</button>
-    
-    <h2 class="titulo">Envios</h2>
-    <div>
-        <ul id="envios">
-        </ul>
-    </div>
-</body>
+        <script src="js/form.js"></script>
+    </body>
 </html>
