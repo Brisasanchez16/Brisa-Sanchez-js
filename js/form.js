@@ -9,6 +9,6 @@ function input(){
     console.log(persona)
 
     let {edad} = persona;
-    edad >= 18 ? console.log("El envio fue aceptado ") : console.log("el envio fue rechazado")
+    edad >= 18 ? swal.fire("Felicitaciones!","El envio fue aceptado. Gracias por su compra", 'success') : swal.fire("Lo sentimos","el envio fue rechazado, ya que no cumple con la mayoria de edad", 'error')
 }
 

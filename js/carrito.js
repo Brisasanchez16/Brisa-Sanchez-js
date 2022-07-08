@@ -56,6 +56,13 @@ total.addEventListener("click", () => {
         sumaTotal += carrito[i];
         console.log(i);
     }
-    let carritoSuma = document.getElementById("carritoSuma")
-    carritoSuma.innerHTML = `<h3>Su total es de: $${sumaTotal}`
+
+        Swal.fire({
+            title: 'El total de su compra es:',
+            text: `$ ${sumaTotal}`,
+            imageUrl: 'https://media1.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif?cid=ecf05e47cf3vzld49tf88p25v8arrs4ph4b725ijjwm6wsjk&rid=giphy.gif&ct=g',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+        })
 });
