@@ -1,4 +1,4 @@
-let carrito = [];
+/*let carrito = [];
 
 let amatista = document.getElementById("producto1");
 amatista.addEventListener("click", () => {
@@ -47,7 +47,7 @@ sahumerioR.addEventListener("click", () => {
 let calendula = document.getElementById("producto12");
 calendula.addEventListener("click", () => {
     carrito.push(80);
-});
+});*/
 
 let total = document.getElementById("total");
 total.addEventListener("click", () => {
@@ -66,3 +66,29 @@ total.addEventListener("click", () => {
             imageAlt: 'Custom image',
         })
 });
+
+const productos = document.querySelector('.galeria-fotos')
+
+fetch('/productos/stock.json')
+    .then( (res)=> res.json ())
+    .then( (data)=> {
+
+        data.forEach((producto) =>{
+            const galeria = document.createElement('div')
+
+            galeria.innerHTML=`
+            <div class="foto">
+            <img class="tamaño" src="${producto.img}" alt="" />
+        </div>
+        <div class="pie">
+            <p>${producto.nombre} <br/> ${producto.precio}</p>
+            <button  class="productos">Comprar</button>
+        </div>
+            `
+            productos.append(galeria)
+        }
+        )
+    }
+    )
+
+

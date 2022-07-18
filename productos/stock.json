@@ -1,0 +1,74 @@
+[
+    {
+        "id": "producto1",
+        "img": "/assets/img/amatistas.jpeg",
+        "nombre": "Amatista",
+        "precio": 450
+    },
+    {
+        "id": "producto2",
+        "img": "../assets/img/amazonita.jpeg",
+        "nombre": "Amazonita",
+        "precio": 350
+    },
+    {
+        "id": "producto3",
+        "img": "../assets/img/aventurina.jpeg",
+        "nombre": "Aventurina",
+        "precio": 300
+    },
+    {
+        "id": "producto4",
+        "img": "../assets/img/citrino.jpeg",
+        "nombre": "Citrino",
+        "precio": 350
+    },
+    {
+        "id": "producto5",
+        "img": "../assets/img/cuarzo-rosa-en-bruto.jpeg",
+        "nombre": "Cuarzo rosa",
+        "precio": 400
+    },
+    {
+        "id": "producto6",
+        "img": "../assets/img/fluorita-verde.jpeg",
+        "nombre": "Fluorita verde",
+        "precio": 350
+    },
+    {
+        "id": "producto7",
+        "img": "../assets/img/sahumerio-palosanto.jpeg",
+        "nombre": "Sahumerio palo santo",
+        "precio": 450
+    },
+    {
+        "id": "producto8",
+        "img": "../assets/img/kit-hierbas.jpeg",
+        "nombre": "Kit hierbas",
+        "precio": 1350
+    },
+    {
+        "id": "producto9",
+        "img": "../assets/img/mystery-box.png",
+        "nombre": "Mystery box",
+        "precio": 2000
+    },
+    {
+        "id": "producto10",
+        "img": "../assets/img/menta.jpeg",
+        "nombre": "Menta",
+        "precio": 50
+    },
+    {
+        "id": "producto11",
+        "img": "../assets/img/sahumerio-rosas.jpeg",
+        "nombre": "Sahumerio de rosas",
+        "precio": 450
+    },
+    {
+        "id": "producto12",
+        "img": "../assets/img/calendula.jpeg",
+        "nombre": "Calendula",
+        "precio": 80
+    }
+]
