@@ -136,3 +136,25 @@ button{
 .titulo{
     margin-top: 40px;
 }
+
+
+.imgCarrito{
+    width: 100px;
+}
+
+.parrafo{
+    color: beige;
+}
+
+.boton-eliminar{
+    color: aliceblue;
+}
+
+.boton-vaciar{
+    color: aliceblue;
+}
+
+.finalizar{
+    text-decoration: none;
+    color: aliceblue;
+}
